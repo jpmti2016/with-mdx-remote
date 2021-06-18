@@ -1,14 +1,8 @@
 export default function Layout({ children }) {
   return (
     <>
-      <div className="wrapper">{children}</div>
-      <style jsx>{`
-        .wrapper {
-          max-width: 36rem;
-          margin: 0 auto;
-          padding: 1.5rem;
-        }
-      `}</style>
+      <div className="max-w-xl p-6 mx-auto my-0">{children}</div>
+
       <style jsx global>{`
         * {
           margin: 0;
@@ -41,9 +35,9 @@ export default function Layout({ children }) {
         }
 
         code {
-          font-family: 'Menlo';
+          font-family: "Menlo";
         }
       `}</style>
     </>
-  )
+  );
 }
